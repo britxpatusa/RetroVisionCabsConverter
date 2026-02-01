@@ -1,0 +1,181 @@
+{
+  "id": "upright",
+  "name": "Upright Cabinet",
+  "description": "Standard vertical arcade cabinet - the most common type found in arcades.",
+  "model": "upright.glb",
+  "defaultMaterial": "black",
+  "crtOrientation": "vertical",
+  "previewImage": "preview.png",
+  "parts": [
+    {
+      "id": "side-left",
+      "meshName": "left",
+      "displayName": "Left Side Panel",
+      "description": "Full-height left side panel artwork",
+      "dimensions": { "width": 2048, "height": 2048 },
+      "filePatterns": ["side-left", "left", "side_l", "sideart-left", "side"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "side-right",
+      "meshName": "right",
+      "displayName": "Right Side Panel",
+      "description": "Full-height right side panel artwork (mirrored)",
+      "dimensions": { "width": 2048, "height": 2048 },
+      "filePatterns": ["side-right", "right", "side_r", "sideart-right"],
+      "required": true,
+      "type": "texture",
+      "flipHorizontal": true
+    },
+    {
+      "id": "front",
+      "meshName": "front",
+      "displayName": "Front Panel",
+      "description": "Lower front panel below control panel",
+      "dimensions": { "width": 1024, "height": 512 },
+      "filePatterns": ["front", "front-panel", "kick", "kickplate"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "marquee",
+      "meshName": "marquee",
+      "displayName": "Marquee Art",
+      "description": "Illuminated sign artwork at the top",
+      "dimensions": { "width": 1024, "height": 256 },
+      "filePatterns": ["marquee", "header", "top-sign", "marquee-art"],
+      "required": true,
+      "type": "marquee",
+      "emissive": true
+    },
+    {
+      "id": "bezel",
+      "meshName": "bezel",
+      "displayName": "Monitor Bezel",
+      "description": "Frame around the screen with transparent center",
+      "dimensions": { "width": 1024, "height": 1024 },
+      "filePatterns": ["bezel", "screen-frame", "monitor-bezel"],
+      "required": true,
+      "type": "bezel",
+      "hasAlpha": true
+    },
+    {
+      "id": "control-panel",
+      "meshName": "joystick",
+      "displayName": "Control Panel Overlay",
+      "description": "Top surface artwork for joystick and buttons",
+      "dimensions": { "width": 1024, "height": 512 },
+      "filePatterns": ["control", "joystick", "cpo", "control-panel", "controls", "overlay"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "control-panel-front",
+      "meshName": "joystick-down",
+      "displayName": "Control Panel Front",
+      "description": "Front edge of control panel",
+      "dimensions": { "width": 1024, "height": 256 },
+      "filePatterns": ["joystick-down", "joystickdown", "cp-front"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "coin-slot",
+      "meshName": "coin-slot",
+      "displayName": "Coin Slot Panel",
+      "description": "Coin insertion area",
+      "dimensions": { "width": 512, "height": 512 },
+      "filePatterns": ["coin", "coinslot", "coin-slot"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "cab",
+      "meshName": "cab",
+      "displayName": "Cabinet Body",
+      "description": "Main cabinet body",
+      "dimensions": { "width": 1024, "height": 1024 },
+      "filePatterns": ["cabinet", "cab", "body"],
+      "required": false,
+      "type": "texture",
+      "defaultColor": { "r": 20, "g": 20, "b": 20 }
+    },
+    {
+      "id": "screen-base",
+      "meshName": "screen-base",
+      "displayName": "Screen Housing",
+      "description": "CRT monitor housing",
+      "dimensions": { "width": 512, "height": 512 },
+      "filePatterns": ["screen-base", "crt-base"],
+      "required": false,
+      "type": "texture",
+      "defaultColor": { "r": 15, "g": 15, "b": 15 }
+    }
+  ],
+  "buttons": [
+    {
+      "id": "button-ball",
+      "meshName": "button-ball",
+      "displayName": "Joystick Ball",
+      "defaultColor": { "r": 200, "g": 40, "b": 40 }
+    },
+    {
+      "id": "button-black",
+      "meshName": "button-black",
+      "displayName": "Black Button",
+      "defaultColor": { "r": 30, "g": 30, "b": 30 }
+    },
+    {
+      "id": "button-darkgreen",
+      "meshName": "button-darkgreen",
+      "displayName": "Dark Green Button",
+      "defaultColor": { "r": 0, "g": 100, "b": 0 }
+    },
+    {
+      "id": "button-lightgreen",
+      "meshName": "button-lightgreen",
+      "displayName": "Light Green Button",
+      "defaultColor": { "r": 50, "g": 200, "b": 50 }
+    }
+  ],
+  "coinDoorParts": [
+    {
+      "id": "cd-base",
+      "meshName": "CD-base",
+      "displayName": "Coin Door Base",
+      "defaultColor": { "r": 30, "g": 30, "b": 30 }
+    },
+    {
+      "id": "cd-slot",
+      "meshName": "CD-slot",
+      "displayName": "Coin Slot",
+      "defaultColor": { "r": 20, "g": 20, "b": 20 }
+    },
+    {
+      "id": "cd-25c",
+      "meshName": "CD-25c",
+      "displayName": "25¢ Label",
+      "defaultColor": { "r": 200, "g": 180, "b": 50 }
+    },
+    {
+      "id": "cd-return",
+      "meshName": "CD-return",
+      "displayName": "Coin Return",
+      "defaultColor": { "r": 40, "g": 40, "b": 40 }
+    },
+    {
+      "id": "cd-upper",
+      "meshName": "CD-upper",
+      "displayName": "Upper Coin Door",
+      "defaultColor": { "r": 35, "g": 35, "b": 35 }
+    },
+    {
+      "id": "cd-lower",
+      "meshName": "CD-lower",
+      "displayName": "Lower Coin Door",
+      "defaultColor": { "r": 35, "g": 35, "b": 35 }
+    }
+  ],
+  "screenMesh": "screen-mock-vertical"
+}

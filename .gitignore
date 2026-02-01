@@ -1,0 +1,86 @@
+# Xcode
+*.xcuserstate
+*.xcuserdatad/
+*.xccheckout
+*.moved-aside
+DerivedData/
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Xcode - User data
+xcuserdata/
+*.xcuserstate
+*.xcworkspace/xcuserdata/
+
+# Build products
+build/
+Build/
+*.app
+!*.app/
+
+# Swift Package Manager
+.build/
+Packages/
+Package.resolved
+.swiftpm/
+
+# CocoaPods
+Pods/
+Podfile.lock
+
+# Carthage
+Carthage/Build/
+Carthage/Checkouts/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Thumbnails
+Thumbs.db
+ehthumbs.db
+
+# Editor
+*.swp
+*.swo
+*~
+
+# IDE
+.idea/
+*.sublime-workspace
+.vscode/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Python bytecode (from conversion scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# App-specific
+.retrovision/
+
+# Built app bundles (keep source, exclude compiled app)
+*.app/
+Build/Products/
+.temp/
+
+# Internal build/distribution files (kept locally, not public)
+Scripts/
+RELEASE.md
+DISTRIBUTION_OPTIONS.md
+TEST_CHECKLIST.md
+ExportOptions.plist

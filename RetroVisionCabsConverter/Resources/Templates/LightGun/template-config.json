@@ -1,0 +1,183 @@
+{
+  "id": "lightgun",
+  "name": "Light Gun",
+  "description": "Light gun arcade cabinet with two mounted guns (Area 51 style)",
+  "model": "lightgun.glb",
+  "defaultMaterial": "black",
+  "crtOrientation": "horizontal",
+  "previewImage": "preview.png",
+  "parts": [
+    {
+      "id": "cabinet",
+      "meshName": "cabinet",
+      "displayName": "Cabinet Body",
+      "description": "Main cabinet body",
+      "dimensions": { "width": 1024, "height": 2048 },
+      "filePatterns": ["*cabinet*", "*body*", "*main*"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "left-side",
+      "meshName": "left",
+      "displayName": "Left Side Panel",
+      "description": "Left side artwork panel",
+      "dimensions": { "width": 2048, "height": 1024 },
+      "filePatterns": ["*left*", "*side*l*", "*_l.*"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "right-side",
+      "meshName": "right",
+      "displayName": "Right Side Panel",
+      "description": "Right side artwork panel (mirrored)",
+      "dimensions": { "width": 2048, "height": 1024 },
+      "filePatterns": ["*right*", "*side*r*", "*_r.*"],
+      "required": true,
+      "type": "texture",
+      "mirrorOf": "left-side",
+      "flipHorizontal": true
+    },
+    {
+      "id": "marquee",
+      "meshName": "marquee",
+      "displayName": "Marquee",
+      "description": "Illuminated header sign",
+      "dimensions": { "width": 1024, "height": 256 },
+      "filePatterns": ["*marquee*", "*header*", "*title*"],
+      "required": true,
+      "type": "marquee",
+      "emissive": true
+    },
+    {
+      "id": "bezel",
+      "meshName": "bezel",
+      "displayName": "Screen Bezel",
+      "description": "Screen surround artwork",
+      "dimensions": { "width": 1024, "height": 768 },
+      "filePatterns": ["*bezel*", "*screen*art*", "*monitor*"],
+      "required": false,
+      "type": "bezel",
+      "hasAlpha": true
+    },
+    {
+      "id": "bezel-trim",
+      "meshName": "bezel-trim",
+      "displayName": "Bezel Trim",
+      "description": "Decorative bezel trim",
+      "dimensions": { "width": 512, "height": 512 },
+      "filePatterns": ["*bezel*trim*"],
+      "required": false,
+      "type": "texture",
+      "defaultColor": { "r": 30, "g": 30, "b": 30, "intensity": 1.0 }
+    },
+    {
+      "id": "control-panel",
+      "meshName": "joystick",
+      "displayName": "Control Panel",
+      "description": "Main control panel surface",
+      "dimensions": { "width": 1024, "height": 512 },
+      "filePatterns": ["*control*", "*cp*", "*panel*"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "control-panel-front",
+      "meshName": "joystick-down",
+      "displayName": "Control Panel Front",
+      "description": "Front edge of control panel",
+      "dimensions": { "width": 1024, "height": 128 },
+      "filePatterns": ["*cp*front*", "*panel*front*"],
+      "required": false,
+      "type": "texture",
+      "defaultColor": { "r": 20, "g": 20, "b": 20, "intensity": 1.0 }
+    },
+    {
+      "id": "front-panel",
+      "meshName": "front",
+      "displayName": "Front Panel",
+      "description": "Lower front panel below control panel",
+      "dimensions": { "width": 1024, "height": 1024 },
+      "filePatterns": ["*front*", "*kick*", "*lower*"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "coin-slot",
+      "meshName": "coin-slot",
+      "displayName": "Coin Slot",
+      "description": "Coin insertion area",
+      "dimensions": { "width": 256, "height": 128 },
+      "filePatterns": ["*coin*", "*insert*"],
+      "required": false,
+      "type": "texture",
+      "defaultColor": { "r": 40, "g": 40, "b": 40, "intensity": 1.0 }
+    },
+    {
+      "id": "trim",
+      "meshName": "trim",
+      "displayName": "Cabinet Trim",
+      "description": "Edge trim and molding",
+      "dimensions": { "width": 256, "height": 256 },
+      "filePatterns": ["*trim*", "*edge*", "*mold*"],
+      "required": false,
+      "type": "texture",
+      "defaultColor": { "r": 25, "g": 25, "b": 25, "intensity": 1.0 }
+    }
+  ],
+  "gunParts": [
+    {
+      "id": "gun-left",
+      "meshName": "gun-left",
+      "displayName": "Left Gun",
+      "description": "Player 1 light gun",
+      "defaultColor": { "r": 50, "g": 50, "b": 200, "intensity": 1.0 }
+    },
+    {
+      "id": "gun-right",
+      "meshName": "gun-right",
+      "displayName": "Right Gun",
+      "description": "Player 2 light gun",
+      "defaultColor": { "r": 200, "g": 50, "b": 50, "intensity": 1.0 }
+    },
+    {
+      "id": "gunslots-cable",
+      "meshName": "gunslots-cable",
+      "displayName": "Gun Holsters",
+      "description": "Gun mount and cable housing",
+      "defaultColor": { "r": 30, "g": 30, "b": 30, "intensity": 1.0 }
+    },
+    {
+      "id": "cable-left",
+      "meshName": "cable-left",
+      "displayName": "Left Cable",
+      "description": "Gun cable for player 1",
+      "defaultColor": { "r": 20, "g": 20, "b": 20, "intensity": 1.0 }
+    }
+  ],
+  "buttons": [
+    {
+      "id": "btn-p1",
+      "meshName": "btn-P1",
+      "displayName": "P1 Start",
+      "description": "Player 1 start button",
+      "defaultColor": { "r": 255, "g": 255, "b": 255, "intensity": 1.0 }
+    },
+    {
+      "id": "btn-red",
+      "meshName": "btn-red",
+      "displayName": "Red Button",
+      "description": "Red action button",
+      "defaultColor": { "r": 220, "g": 40, "b": 40, "intensity": 1.0 }
+    },
+    {
+      "id": "btn-blue",
+      "meshName": "btn-blu",
+      "displayName": "Blue Button",
+      "description": "Blue action button",
+      "defaultColor": { "r": 40, "g": 80, "b": 220, "intensity": 1.0 }
+    }
+  ],
+  "screenMesh": "screen-mock-horizontal"
+}

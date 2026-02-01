@@ -1,0 +1,291 @@
+{
+  "id": "defender",
+  "name": "Defender",
+  "description": "Customizable Defender style arcade cabinet - add your own artwork!",
+  "model": "defender.glb",
+  "defaultMaterial": "matte",
+  "crtOrientation": "vertical",
+  "type": "custom",
+  "cabinetType": "upright",
+  "prebuilt": false,
+  "supportsCustomArtwork": true,
+  "dimensions": {
+    "width": 0.61,
+    "depth": 0.7,
+    "height": 1.65
+  },
+  "parts": [
+    {
+      "id": "side-left",
+      "meshName": "side",
+      "displayName": "Left Side Panel",
+      "description": "Left side panel artwork",
+      "dimensions": {
+        "width": 1434,
+        "height": 2048
+      },
+      "filePatterns": [
+        "*side-left*",
+        "*side_left*",
+        "*left_side_panel*"
+      ],
+      "required": true,
+      "type": "texture",
+      "hasAlpha": false,
+      "emissive": false,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "side-right",
+      "meshName": "side.001",
+      "displayName": "Right Side Panel",
+      "description": "Right side panel artwork (usually mirrored)",
+      "dimensions": {
+        "width": 1442,
+        "height": 2048
+      },
+      "filePatterns": [
+        "*side-right*",
+        "*side_right*",
+        "*right_side_panel*"
+      ],
+      "required": true,
+      "type": "texture",
+      "hasAlpha": false,
+      "emissive": false,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "bezel",
+      "meshName": "part-defaultMaterial.005",
+      "displayName": "Screen Bezel",
+      "description": "Artwork around the screen",
+      "dimensions": {
+        "width": 595,
+        "height": 512
+      },
+      "filePatterns": [
+        "*bezel*",
+        "*bezel*",
+        "*screen_bezel*"
+      ],
+      "required": false,
+      "type": "bezel",
+      "hasAlpha": true,
+      "emissive": false,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "marquee",
+      "meshName": "marquee",
+      "displayName": "Marquee",
+      "description": "Top marquee/header artwork",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "filePatterns": [
+        "*marquee*",
+        "*marquee*",
+        "*marquee*"
+      ],
+      "required": true,
+      "type": "marquee",
+      "hasAlpha": false,
+      "emissive": true,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "panel-1",
+      "meshName": "part-defaultMaterial.003",
+      "displayName": "Panel 1",
+      "description": "Additional panel artwork",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "filePatterns": [
+        "*panel-1*",
+        "*panel_1*",
+        "*panel_1*"
+      ],
+      "required": false,
+      "type": "texture",
+      "hasAlpha": false,
+      "emissive": false,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "panel-2",
+      "meshName": "part-defaultMaterial.004",
+      "displayName": "Panel 2",
+      "description": "Additional panel artwork",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "filePatterns": [
+        "*panel-2*",
+        "*panel_2*",
+        "*panel_2*"
+      ],
+      "required": false,
+      "type": "texture",
+      "hasAlpha": false,
+      "emissive": false,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "panel-3",
+      "meshName": "part-defaultMaterial",
+      "displayName": "Panel 3",
+      "description": "Additional panel artwork",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "filePatterns": [
+        "*panel-3*",
+        "*panel_3*",
+        "*panel_3*"
+      ],
+      "required": false,
+      "type": "texture",
+      "hasAlpha": false,
+      "emissive": false,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "panel-4",
+      "meshName": "part-defaultMaterial.001",
+      "displayName": "Panel 4",
+      "description": "Additional panel artwork",
+      "dimensions": {
+        "width": 606,
+        "height": 512
+      },
+      "filePatterns": [
+        "*panel-4*",
+        "*panel_4*",
+        "*panel_4*"
+      ],
+      "required": false,
+      "type": "texture",
+      "hasAlpha": false,
+      "emissive": false,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "panel-5",
+      "meshName": "part-defaultMaterial.002",
+      "displayName": "Panel 5",
+      "description": "Additional panel artwork",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "filePatterns": [
+        "*panel-5*",
+        "*panel_5*",
+        "*panel_5*"
+      ],
+      "required": false,
+      "type": "texture",
+      "hasAlpha": false,
+      "emissive": false,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    }
+  ],
+  "tMolding": {
+    "id": "t-molding",
+    "meshName": "t-molding",
+    "displayName": "T-Molding",
+    "description": "Edge trim around cabinet edges",
+    "colorOptions": [
+      {
+        "name": "Black",
+        "hex": "#1a1a1a"
+      },
+      {
+        "name": "Red",
+        "hex": "#cc0000"
+      },
+      {
+        "name": "Blue",
+        "hex": "#0066cc"
+      },
+      {
+        "name": "Green",
+        "hex": "#00cc00"
+      },
+      {
+        "name": "Yellow",
+        "hex": "#cccc00"
+      },
+      {
+        "name": "Orange",
+        "hex": "#ff6600"
+      },
+      {
+        "name": "Purple",
+        "hex": "#9900cc"
+      },
+      {
+        "name": "White",
+        "hex": "#ffffff"
+      }
+    ],
+    "supportsLED": true,
+    "ledAnimations": [
+      "pulse",
+      "chase",
+      "rainbow",
+      "static"
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "id": "vertical",
+  "name": "Vertical Cabinet",
+  "description": "Classic vertical shooter cabinet - ideal for games like 1943, Galaga, Xevious.",
+  "model": "vertical.glb",
+  "defaultMaterial": "black",
+  "crtOrientation": "vertical",
+  "previewImage": "vertical-preview.png",
+  "parts": [
+    {
+      "id": "left",
+      "meshName": "left",
+      "displayName": "Left Side Panel",
+      "description": "Left side panel artwork",
+      "dimensions": { "width": 2048, "height": 1536 },
+      "filePatterns": ["left", "side-left", "sideart-left"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "right",
+      "meshName": "right",
+      "displayName": "Right Side Panel",
+      "description": "Right side panel artwork",
+      "dimensions": { "width": 2048, "height": 1536 },
+      "filePatterns": ["right", "side-right", "sideart-right"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "front",
+      "meshName": "front",
+      "displayName": "Front Panel",
+      "description": "Front panel below control deck",
+      "dimensions": { "width": 1024, "height": 512 },
+      "filePatterns": ["front", "front-panel"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "marquee",
+      "meshName": "marquee",
+      "displayName": "Marquee Art",
+      "description": "Illuminated header sign",
+      "dimensions": { "width": 1024, "height": 256 },
+      "filePatterns": ["marquee", "header"],
+      "required": true,
+      "type": "marquee",
+      "emissive": true,
+      "defaultColor": { "r": 238, "g": 232, "b": 176, "intensity": 1.0 }
+    },
+    {
+      "id": "bezel",
+      "meshName": "bezel",
+      "displayName": "Monitor Bezel",
+      "description": "Frame around the screen",
+      "dimensions": { "width": 768, "height": 1024 },
+      "filePatterns": ["bezel", "screen-bezel"],
+      "required": true,
+      "type": "bezel",
+      "hasAlpha": true
+    },
+    {
+      "id": "joystick",
+      "meshName": "joystick",
+      "displayName": "Control Panel",
+      "description": "Control panel top surface",
+      "dimensions": { "width": 1024, "height": 512 },
+      "filePatterns": ["joystick", "control-panel", "controls"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "coin-slot",
+      "meshName": "coin-slot",
+      "displayName": "Coin Door",
+      "description": "Coin slot area",
+      "dimensions": { "width": 384, "height": 256 },
+      "filePatterns": ["coin-slot", "coin", "coinslot"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "screen-shroud",
+      "meshName": "screen-shroud",
+      "displayName": "Screen Shroud",
+      "description": "Hood around the screen",
+      "dimensions": { "width": 640, "height": 480 },
+      "filePatterns": ["screen-shroud", "shroud"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "trim",
+      "meshName": "trim",
+      "displayName": "Cabinet Trim",
+      "description": "Decorative trim around cabinet",
+      "dimensions": { "width": 512, "height": 512 },
+      "filePatterns": ["trim", "molding"],
+      "required": false,
+      "type": "texture"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "btn-A",
+      "meshName": "btn-A",
+      "displayName": "Button A",
+      "defaultColor": "#FF0000"
+    },
+    {
+      "id": "btn-B",
+      "meshName": "btn-B",
+      "displayName": "Button B",
+      "defaultColor": "#0000FF"
+    },
+    {
+      "id": "btn-P1",
+      "meshName": "btn-P1",
+      "displayName": "Player 1 Start",
+      "defaultColor": "#FFFFFF"
+    },
+    {
+      "id": "btn-red",
+      "meshName": "btn-red",
+      "displayName": "Red Button",
+      "defaultColor": "#FF0000"
+    },
+    {
+      "id": "btn-blu",
+      "meshName": "btn-blu",
+      "displayName": "Blue Button",
+      "defaultColor": "#0000FF"
+    },
+    {
+      "id": "btn-wht",
+      "meshName": "btn-wht",
+      "displayName": "White Button",
+      "defaultColor": "#FFFFFF"
+    }
+  ],
+  "joystickParts": [
+    {
+      "id": "joyC",
+      "meshName": "joyC",
+      "displayName": "Joystick Collar",
+      "defaultColor": "#333333"
+    },
+    {
+      "id": "joyN",
+      "meshName": "joyN",
+      "displayName": "Joystick Neck",
+      "defaultColor": "#222222"
+    },
+    {
+      "id": "joy2",
+      "meshName": "joy2",
+      "displayName": "Joystick Base",
+      "defaultColor": "#111111"
+    }
+  ],
+  "tMolding": {
+    "id": "trim",
+    "meshName": "trim",
+    "displayName": "Cabinet Trim",
+    "colorOptions": [
+      { "name": "Black", "hex": "#1a1a1a" },
+      { "name": "Red", "hex": "#e63946" },
+      { "name": "Blue", "hex": "#1d3557" },
+      { "name": "Yellow", "hex": "#f4a261" }
+    ]
+  }
+}

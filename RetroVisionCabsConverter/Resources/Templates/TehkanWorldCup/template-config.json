@@ -1,0 +1,291 @@
+{
+  "id": "tehkan-world-cup",
+  "name": "Tehkan World Cup",
+  "description": "Customizable Tehkan World Cup style arcade cabinet - add your own artwork!",
+  "model": "tehkan.glb",
+  "defaultMaterial": "matte",
+  "crtOrientation": "horizontal",
+  "type": "custom",
+  "cabinetType": "cocktail",
+  "prebuilt": false,
+  "supportsCustomArtwork": true,
+  "dimensions": {
+    "width": 1.16,
+    "depth": 1.74,
+    "height": 1.65
+  },
+  "parts": [
+    {
+      "id": "side-left",
+      "meshName": "defaultMaterial.008",
+      "displayName": "Left Side Panel",
+      "description": "Left side panel artwork",
+      "dimensions": {
+        "width": 2048,
+        "height": 2048
+      },
+      "filePatterns": [
+        "*side-left*",
+        "*side_left*",
+        "*left_side_panel*"
+      ],
+      "required": true,
+      "type": "texture",
+      "hasAlpha": false,
+      "emissive": false,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "panel-1",
+      "meshName": "defaultMaterial.001",
+      "displayName": "Panel 1",
+      "description": "Additional panel artwork",
+      "dimensions": {
+        "width": 667,
+        "height": 1782
+      },
+      "filePatterns": [
+        "*panel-1*",
+        "*panel_1*",
+        "*panel_1*"
+      ],
+      "required": false,
+      "type": "texture",
+      "hasAlpha": false,
+      "emissive": false,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "panel-2",
+      "meshName": "defaultMaterial.002",
+      "displayName": "Panel 2",
+      "description": "Additional panel artwork",
+      "dimensions": {
+        "width": 550,
+        "height": 1698
+      },
+      "filePatterns": [
+        "*panel-2*",
+        "*panel_2*",
+        "*panel_2*"
+      ],
+      "required": false,
+      "type": "texture",
+      "hasAlpha": false,
+      "emissive": false,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "bezel",
+      "meshName": "defaultMaterial",
+      "displayName": "Screen Bezel",
+      "description": "Artwork around the screen",
+      "dimensions": {
+        "width": 512,
+        "height": 665
+      },
+      "filePatterns": [
+        "*bezel*",
+        "*bezel*",
+        "*screen_bezel*"
+      ],
+      "required": false,
+      "type": "bezel",
+      "hasAlpha": true,
+      "emissive": false,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "marquee",
+      "meshName": "defaultMaterial.006",
+      "displayName": "Marquee",
+      "description": "Top marquee/header artwork",
+      "dimensions": {
+        "width": 2048,
+        "height": 512
+      },
+      "filePatterns": [
+        "*marquee*",
+        "*marquee*",
+        "*marquee*"
+      ],
+      "required": true,
+      "type": "marquee",
+      "hasAlpha": false,
+      "emissive": true,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "marquee",
+      "meshName": "defaultMaterial.003",
+      "displayName": "Marquee",
+      "description": "Top marquee/header artwork",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "filePatterns": [
+        "*marquee*",
+        "*marquee*",
+        "*marquee*"
+      ],
+      "required": true,
+      "type": "marquee",
+      "hasAlpha": false,
+      "emissive": true,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "marquee",
+      "meshName": "defaultMaterial.005",
+      "displayName": "Marquee",
+      "description": "Top marquee/header artwork",
+      "dimensions": {
+        "width": 2048,
+        "height": 512
+      },
+      "filePatterns": [
+        "*marquee*",
+        "*marquee*",
+        "*marquee*"
+      ],
+      "required": true,
+      "type": "marquee",
+      "hasAlpha": false,
+      "emissive": true,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "marquee",
+      "meshName": "defaultMaterial.007",
+      "displayName": "Marquee",
+      "description": "Top marquee/header artwork",
+      "dimensions": {
+        "width": 1468,
+        "height": 512
+      },
+      "filePatterns": [
+        "*marquee*",
+        "*marquee*",
+        "*marquee*"
+      ],
+      "required": true,
+      "type": "marquee",
+      "hasAlpha": false,
+      "emissive": true,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    },
+    {
+      "id": "marquee",
+      "meshName": "defaultMaterial.004",
+      "displayName": "Marquee",
+      "description": "Top marquee/header artwork",
+      "dimensions": {
+        "width": 2048,
+        "height": 512
+      },
+      "filePatterns": [
+        "*marquee*",
+        "*marquee*",
+        "*marquee*"
+      ],
+      "required": true,
+      "type": "marquee",
+      "hasAlpha": false,
+      "emissive": true,
+      "defaultColor": {
+        "r": 30,
+        "g": 30,
+        "b": 30,
+        "intensity": 1.0
+      }
+    }
+  ],
+  "tMolding": {
+    "id": "t-molding",
+    "meshName": "t-molding",
+    "displayName": "T-Molding",
+    "description": "Edge trim around cabinet edges",
+    "colorOptions": [
+      {
+        "name": "Black",
+        "hex": "#1a1a1a"
+      },
+      {
+        "name": "Red",
+        "hex": "#cc0000"
+      },
+      {
+        "name": "Blue",
+        "hex": "#0066cc"
+      },
+      {
+        "name": "Green",
+        "hex": "#00cc00"
+      },
+      {
+        "name": "Yellow",
+        "hex": "#cccc00"
+      },
+      {
+        "name": "Orange",
+        "hex": "#ff6600"
+      },
+      {
+        "name": "Purple",
+        "hex": "#9900cc"
+      },
+      {
+        "name": "White",
+        "hex": "#ffffff"
+      }
+    ],
+    "supportsLED": true,
+    "ledAnimations": [
+      "pulse",
+      "chase",
+      "rainbow",
+      "static"
+    ]
+  }
+}

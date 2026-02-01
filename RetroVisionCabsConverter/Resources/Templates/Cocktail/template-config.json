@@ -1,0 +1,167 @@
+{
+  "id": "cocktail",
+  "name": "Cocktail Cabinet",
+  "description": "Table-style cabinet for 2-player face-to-face games like Pac-Man and Donkey Kong.",
+  "model": "cocktail.glb",
+  "defaultMaterial": "black",
+  "crtOrientation": "horizontal",
+  "previewImage": "cocktail-preview.png",
+  "parts": [
+    {
+      "id": "top-glass",
+      "meshName": "bezel",
+      "displayName": "Glass Top Bezel",
+      "description": "Glass top artwork surrounding the screen (supports transparency)",
+      "dimensions": { "width": 1024, "height": 1024 },
+      "filePatterns": ["top-glass", "glass", "bezel", "top-bezel"],
+      "required": true,
+      "type": "bezel",
+      "hasAlpha": true
+    },
+    {
+      "id": "side-left",
+      "meshName": "left",
+      "displayName": "Left Side Panel",
+      "description": "Left side panel artwork",
+      "dimensions": { "width": 1024, "height": 256 },
+      "filePatterns": ["side-left", "left", "side_l", "panel-left"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "side-right",
+      "meshName": "right",
+      "displayName": "Right Side Panel",
+      "description": "Right side panel artwork",
+      "dimensions": { "width": 1024, "height": 256 },
+      "filePatterns": ["side-right", "right", "side_r", "panel-right"],
+      "required": true,
+      "type": "texture",
+      "flipHorizontal": true
+    },
+    {
+      "id": "front-panel",
+      "meshName": "front",
+      "displayName": "Front Panel",
+      "description": "Front side panel",
+      "dimensions": { "width": 1024, "height": 256 },
+      "filePatterns": ["front", "front-panel"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "back-panel",
+      "meshName": "back",
+      "displayName": "Back Panel",
+      "description": "Back side panel",
+      "dimensions": { "width": 1024, "height": 256 },
+      "filePatterns": ["back", "back-panel", "rear"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "top-panel",
+      "meshName": "top",
+      "displayName": "Top Panel (Under Glass)",
+      "description": "Surface under the glass top",
+      "dimensions": { "width": 1024, "height": 768 },
+      "filePatterns": ["top", "top-surface", "under-glass"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "bottom-panel",
+      "meshName": "bottom",
+      "displayName": "Bottom Panel",
+      "description": "Underside of the table (usually not visible)",
+      "dimensions": { "width": 1024, "height": 768 },
+      "filePatterns": ["bottom", "base", "underside"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "control-panel-1",
+      "meshName": "joystick",
+      "displayName": "Player 1 Control Panel",
+      "description": "Control panel for player 1",
+      "dimensions": { "width": 512, "height": 256 },
+      "filePatterns": ["control-1", "player1", "p1-control", "joystick", "control-panel"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "control-panel-2",
+      "meshName": "joystick-2",
+      "displayName": "Player 2 Control Panel",
+      "description": "Control panel for player 2 (opposite side)",
+      "dimensions": { "width": 512, "height": 256 },
+      "filePatterns": ["control-2", "player2", "p2-control"],
+      "required": false,
+      "type": "texture",
+      "mirrorOf": "control-panel-1",
+      "flipHorizontal": true
+    },
+    {
+      "id": "marquee",
+      "meshName": "marquee",
+      "displayName": "Table Marquee",
+      "description": "Small marquee panel on the side",
+      "dimensions": { "width": 512, "height": 128 },
+      "filePatterns": ["marquee", "logo", "brand"],
+      "required": false,
+      "type": "marquee",
+      "emissive": true,
+      "defaultColor": { "r": 238, "g": 232, "b": 176, "intensity": 1.0 }
+    },
+    {
+      "id": "coin-door",
+      "meshName": "coin-door",
+      "displayName": "Coin Door",
+      "description": "Coin slot area",
+      "dimensions": { "width": 128, "height": 64 },
+      "filePatterns": ["coin", "coinslot", "coin-door"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "speaker-panel",
+      "meshName": "speaker",
+      "displayName": "Speaker Panel",
+      "description": "Speaker grille area",
+      "dimensions": { "width": 256, "height": 128 },
+      "filePatterns": ["speaker", "speaker-panel", "audio"],
+      "required": false,
+      "type": "texture"
+    }
+  ],
+  "tMolding": {
+    "id": "t-molding",
+    "meshName": "t-molding",
+    "displayName": "T-Molding / Edge Trim",
+    "description": "Plastic edge strip around table top - choose a color or LED effect",
+    "colorOptions": [
+      { "name": "Black", "hex": "#1a1a1a" },
+      { "name": "White", "hex": "#f5f5f5" },
+      { "name": "Red", "hex": "#e63946" },
+      { "name": "Blue", "hex": "#1d3557" },
+      { "name": "Green", "hex": "#2a9d8f" },
+      { "name": "Yellow", "hex": "#f4a261" },
+      { "name": "Orange", "hex": "#e76f51" },
+      { "name": "Purple", "hex": "#7b2cbf" },
+      { "name": "Pink", "hex": "#ff69b4" },
+      { "name": "Chrome", "hex": "#c0c0c0" }
+    ],
+    "supportsLED": true,
+    "ledAnimations": ["pulse", "chase", "rainbow", "flash"]
+  },
+  "optionalParts": [
+    {
+      "id": "legs",
+      "meshName": "leg-1",
+      "displayName": "Table Legs",
+      "description": "Texture for table legs",
+      "dimensions": { "width": 128, "height": 256 },
+      "filePatterns": ["leg", "legs", "table-leg"]
+    }
+  ]
+}

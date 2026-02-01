@@ -1,0 +1,175 @@
+{
+  "id": "neogeo",
+  "name": "Neo Geo Cabinet",
+  "description": "SNK Neo Geo MVS arcade cabinet - distinctive tall cabinet with 4-button layout.",
+  "model": "neogeo.glb",
+  "defaultMaterial": "black",
+  "crtOrientation": "horizontal",
+  "previewImage": "neogeo-preview.png",
+  "parts": [
+    {
+      "id": "left",
+      "meshName": "left",
+      "displayName": "Left Side Panel",
+      "description": "Left side panel artwork",
+      "dimensions": { "width": 2048, "height": 1536 },
+      "filePatterns": ["left", "side-left", "sideart-left"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "right",
+      "meshName": "right",
+      "displayName": "Right Side Panel",
+      "description": "Right side panel artwork",
+      "dimensions": { "width": 2048, "height": 1536 },
+      "filePatterns": ["right", "side-right", "sideart-right"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "front",
+      "meshName": "front",
+      "displayName": "Front Panel",
+      "description": "Front panel below control deck",
+      "dimensions": { "width": 1024, "height": 512 },
+      "filePatterns": ["front", "front-panel"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "marquee",
+      "meshName": "marquee",
+      "displayName": "Marquee Art",
+      "description": "Illuminated header sign",
+      "dimensions": { "width": 1024, "height": 256 },
+      "filePatterns": ["marquee", "header"],
+      "required": true,
+      "type": "marquee",
+      "emissive": true,
+      "defaultColor": { "r": 238, "g": 232, "b": 176, "intensity": 1.0 }
+    },
+    {
+      "id": "marquee-bezel",
+      "meshName": "marquee-bezel",
+      "displayName": "Marquee Bezel",
+      "description": "Frame around the marquee",
+      "dimensions": { "width": 1024, "height": 128 },
+      "filePatterns": ["marquee-bezel", "marquee-frame"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "bezel",
+      "meshName": "bezel",
+      "displayName": "Monitor Bezel",
+      "description": "Frame around the screen",
+      "dimensions": { "width": 1024, "height": 768 },
+      "filePatterns": ["bezel", "screen-bezel"],
+      "required": true,
+      "type": "bezel",
+      "hasAlpha": true
+    },
+    {
+      "id": "joystick",
+      "meshName": "joystick",
+      "displayName": "Control Panel",
+      "description": "Control panel top surface",
+      "dimensions": { "width": 1024, "height": 512 },
+      "filePatterns": ["joystick", "control-panel", "controls"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "joystick-down",
+      "meshName": "joystick-down",
+      "displayName": "Control Panel Underside",
+      "description": "Underside of control panel",
+      "dimensions": { "width": 1024, "height": 256 },
+      "filePatterns": ["joystick-down", "cp-underside"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "coin-slot",
+      "meshName": "coin-slot",
+      "displayName": "Coin Door",
+      "description": "Coin slot area",
+      "dimensions": { "width": 384, "height": 256 },
+      "filePatterns": ["coin-slot", "coin", "coinslot"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "screen-base",
+      "meshName": "screen-base",
+      "displayName": "Screen Base",
+      "description": "CRT housing base",
+      "dimensions": { "width": 640, "height": 480 },
+      "filePatterns": ["screen-base"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "bordercrt",
+      "meshName": "bordercrt",
+      "displayName": "CRT Border",
+      "description": "Border around CRT",
+      "dimensions": { "width": 640, "height": 480 },
+      "filePatterns": ["bordercrt", "crt-border"],
+      "required": false,
+      "type": "texture"
+    }
+  ],
+  "buttons": [
+    {
+      "id": "btn-A",
+      "meshName": "btn-A",
+      "displayName": "Button A",
+      "defaultColor": "#FF0000"
+    },
+    {
+      "id": "btn-B",
+      "meshName": "btn-B",
+      "displayName": "Button B",
+      "defaultColor": "#FFFF00"
+    },
+    {
+      "id": "btn-C",
+      "meshName": "btn-C",
+      "displayName": "Button C",
+      "defaultColor": "#00FF00"
+    },
+    {
+      "id": "btn-D",
+      "meshName": "btn-D",
+      "displayName": "Button D",
+      "defaultColor": "#0000FF"
+    },
+    {
+      "id": "btn-start",
+      "meshName": "btn-start",
+      "displayName": "Start Button",
+      "defaultColor": "#FFFFFF"
+    }
+  ],
+  "joystickParts": [
+    {
+      "id": "ball-top",
+      "meshName": "ball-top",
+      "displayName": "Joystick Ball Top",
+      "defaultColor": "#FF0000"
+    }
+  ],
+  "tMolding": {
+    "id": "t-molding",
+    "meshName": "t-molding",
+    "displayName": "T-Molding",
+    "colorOptions": [
+      { "name": "Black", "hex": "#1a1a1a" },
+      { "name": "Red", "hex": "#e63946" },
+      { "name": "Blue", "hex": "#1d3557" },
+      { "name": "Yellow", "hex": "#f4a261" }
+    ]
+  }
+}

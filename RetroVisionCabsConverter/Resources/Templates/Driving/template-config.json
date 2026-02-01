@@ -1,0 +1,216 @@
+{
+  "id": "driving",
+  "name": "Driving Cabinet",
+  "description": "Sit-down racing cabinet with steering wheel, pedals, and gear shifter for games like OutRun, Daytona USA, and Cruisin' USA.",
+  "model": "driving.glb",
+  "defaultMaterial": "black",
+  "crtOrientation": "horizontal",
+  "previewImage": "driving-preview.png",
+  "parts": [
+    {
+      "id": "side-left",
+      "meshName": "left",
+      "displayName": "Left Side Panel",
+      "description": "Full-height left side panel artwork (wraparound racing graphics)",
+      "dimensions": { "width": 2048, "height": 2048 },
+      "filePatterns": ["side-left", "left", "side_l", "sideart-left", "side"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "side-right",
+      "meshName": "right",
+      "displayName": "Right Side Panel",
+      "description": "Full-height right side panel artwork (mirrored)",
+      "dimensions": { "width": 2048, "height": 2048 },
+      "filePatterns": ["side-right", "right", "side_r", "sideart-right"],
+      "required": true,
+      "type": "texture",
+      "flipHorizontal": true
+    },
+    {
+      "id": "back-panel",
+      "meshName": "back",
+      "displayName": "Back Panel",
+      "description": "Rear panel (service access)",
+      "dimensions": { "width": 1024, "height": 1536 },
+      "filePatterns": ["back", "rear", "back-panel"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "top-panel",
+      "meshName": "top",
+      "displayName": "Top Panel",
+      "description": "Top surface of the cabinet",
+      "dimensions": { "width": 1024, "height": 768 },
+      "filePatterns": ["top", "top-panel", "roof"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "bottom-panel",
+      "meshName": "bottom",
+      "displayName": "Bottom Panel",
+      "description": "Floor/base panel",
+      "dimensions": { "width": 1024, "height": 768 },
+      "filePatterns": ["bottom", "floor", "base"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "dashboard",
+      "meshName": "dashboard",
+      "displayName": "Dashboard Panel",
+      "description": "Instrument panel with speedometer, tachometer art",
+      "dimensions": { "width": 1024, "height": 512 },
+      "filePatterns": ["dashboard", "dash", "instruments", "gauges", "speedometer"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "marquee",
+      "meshName": "marquee",
+      "displayName": "Marquee",
+      "description": "Illuminated header sign",
+      "dimensions": { "width": 1536, "height": 256 },
+      "filePatterns": ["marquee", "header", "top-sign"],
+      "required": true,
+      "type": "marquee",
+      "emissive": true,
+      "defaultColor": { "r": 238, "g": 232, "b": 176, "intensity": 1.0 }
+    },
+    {
+      "id": "marquee-box",
+      "meshName": "marquee-box",
+      "displayName": "Marquee Box",
+      "description": "Housing around the marquee",
+      "dimensions": { "width": 1536, "height": 256 },
+      "filePatterns": ["marquee-box", "marquee-housing"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "bezel",
+      "meshName": "bezel",
+      "displayName": "Screen Bezel",
+      "description": "Wide screen bezel (supports transparency)",
+      "dimensions": { "width": 1536, "height": 1024 },
+      "filePatterns": ["bezel", "screen-frame", "monitor-bezel"],
+      "required": true,
+      "type": "bezel",
+      "hasAlpha": true
+    },
+    {
+      "id": "steering-wheel",
+      "meshName": "steering-wheel",
+      "displayName": "Steering Wheel",
+      "description": "Steering wheel texture/decal",
+      "dimensions": { "width": 512, "height": 512 },
+      "filePatterns": ["steering", "wheel", "steering-wheel"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "steering-column",
+      "meshName": "steering-column",
+      "displayName": "Steering Column",
+      "description": "Housing around steering column",
+      "dimensions": { "width": 256, "height": 256 },
+      "filePatterns": ["column", "steering-column"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "gear-shifter",
+      "meshName": "gear-shifter",
+      "displayName": "Gear Shifter",
+      "description": "Gear shifter/transmission selector",
+      "dimensions": { "width": 128, "height": 256 },
+      "filePatterns": ["shifter", "gear", "gear-shifter", "transmission"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "seat",
+      "meshName": "seat",
+      "displayName": "Bucket Seat",
+      "description": "Racing seat upholstery texture",
+      "dimensions": { "width": 1024, "height": 1024 },
+      "filePatterns": ["seat", "chair", "bucket-seat", "upholstery"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "gas-pedal",
+      "meshName": "gas-pedal",
+      "displayName": "Gas Pedal",
+      "description": "Accelerator pedal texture",
+      "dimensions": { "width": 128, "height": 256 },
+      "filePatterns": ["gas", "accelerator", "gas-pedal"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "brake-pedal",
+      "meshName": "brake-pedal",
+      "displayName": "Brake Pedal",
+      "description": "Brake pedal texture",
+      "dimensions": { "width": 128, "height": 256 },
+      "filePatterns": ["brake", "brake-pedal"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "front-kick",
+      "meshName": "front-kick",
+      "displayName": "Front Kick Panel",
+      "description": "Foot rest area panel",
+      "dimensions": { "width": 768, "height": 256 },
+      "filePatterns": ["kick", "front-kick", "footrest"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "coin-door",
+      "meshName": "coin-door",
+      "displayName": "Coin Door",
+      "description": "Coin slot panel",
+      "dimensions": { "width": 256, "height": 192 },
+      "filePatterns": ["coin", "coinslot", "coin-door"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "speaker-panel",
+      "meshName": "speaker",
+      "displayName": "Speaker Panel",
+      "description": "Speaker grille area",
+      "dimensions": { "width": 512, "height": 128 },
+      "filePatterns": ["speaker", "audio", "speaker-panel"],
+      "required": false,
+      "type": "texture"
+    }
+  ],
+  "tMolding": {
+    "id": "t-molding",
+    "meshName": "t-molding",
+    "displayName": "T-Molding / Edge Trim",
+    "description": "Plastic edge strip around cabinet edges - choose a color or LED effect",
+    "colorOptions": [
+      { "name": "Black", "hex": "#1a1a1a" },
+      { "name": "White", "hex": "#f5f5f5" },
+      { "name": "Red", "hex": "#e63946" },
+      { "name": "Blue", "hex": "#1d3557" },
+      { "name": "Green", "hex": "#2a9d8f" },
+      { "name": "Yellow", "hex": "#f4a261" },
+      { "name": "Orange", "hex": "#e76f51" },
+      { "name": "Purple", "hex": "#7b2cbf" },
+      { "name": "Pink", "hex": "#ff69b4" },
+      { "name": "Chrome", "hex": "#c0c0c0" }
+    ],
+    "supportsLED": true,
+    "ledAnimations": ["pulse", "chase", "rainbow", "flash"]
+  },
+  "optionalParts": []
+}

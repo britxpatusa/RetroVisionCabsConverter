@@ -1,0 +1,341 @@
+{
+  "id": "flightstick",
+  "name": "Flightstick",
+  "description": "Flight stick arcade cabinet with spinner dial and mirrors (Tron style)",
+  "model": "flightstick.glb",
+  "defaultMaterial": "black",
+  "crtOrientation": "horizontal",
+  "previewImage": "preview.png",
+  "parts": [
+    {
+      "id": "cabinet",
+      "meshName": "cabinet",
+      "displayName": "Cabinet Body",
+      "description": "Main cabinet body",
+      "dimensions": { "width": 1024, "height": 2048 },
+      "filePatterns": ["*cabinet*", "*body*", "*main*"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "left-side",
+      "meshName": "left",
+      "displayName": "Left Side Panel",
+      "description": "Left side artwork panel",
+      "dimensions": { "width": 2048, "height": 2048 },
+      "filePatterns": ["*left*", "*side*l*", "*_l.*"],
+      "required": true,
+      "type": "texture"
+    },
+    {
+      "id": "right-side",
+      "meshName": "right",
+      "displayName": "Right Side Panel",
+      "description": "Right side artwork panel",
+      "dimensions": { "width": 2048, "height": 2048 },
+      "filePatterns": ["*right*", "*side*r*", "*_r.*"],
+      "required": true,
+      "type": "texture",
+      "mirrorOf": "left-side",
+      "flipHorizontal": true
+    },
+    {
+      "id": "left-inside",
+      "meshName": "leftinside",
+      "displayName": "Left Inside Panel",
+      "description": "Interior left panel artwork",
+      "dimensions": { "width": 1024, "height": 1024 },
+      "filePatterns": ["*inside*left*", "*interior*"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "right-inside",
+      "meshName": "rightinside",
+      "displayName": "Right Inside Panel",
+      "description": "Interior right panel artwork",
+      "dimensions": { "width": 1024, "height": 1024 },
+      "filePatterns": ["*inside*right*", "*interior*"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "marquee",
+      "meshName": "marquee",
+      "displayName": "Marquee",
+      "description": "Illuminated header sign",
+      "dimensions": { "width": 1024, "height": 256 },
+      "filePatterns": ["*marquee*", "*header*", "*title*"],
+      "required": true,
+      "type": "marquee",
+      "emissive": true
+    },
+    {
+      "id": "curved-marquee",
+      "meshName": "curvedmarquee",
+      "displayName": "Curved Marquee",
+      "description": "Upper curved marquee section",
+      "dimensions": { "width": 1024, "height": 256 },
+      "filePatterns": ["*curved*", "*upper*marquee*"],
+      "required": false,
+      "type": "marquee",
+      "emissive": true
+    },
+    {
+      "id": "curved-marquee2",
+      "meshName": "curvedmarquee2",
+      "displayName": "Curved Marquee 2",
+      "description": "Lower curved marquee section",
+      "dimensions": { "width": 1024, "height": 256 },
+      "filePatterns": ["*curved*2*"],
+      "required": false,
+      "type": "marquee",
+      "emissive": true
+    },
+    {
+      "id": "down-marquee",
+      "meshName": "downmarquee",
+      "displayName": "Down Marquee",
+      "description": "Lower marquee panel",
+      "dimensions": { "width": 1024, "height": 256 },
+      "filePatterns": ["*down*marquee*"],
+      "required": false,
+      "type": "marquee",
+      "emissive": true
+    },
+    {
+      "id": "bezel",
+      "meshName": "bezel",
+      "displayName": "Screen Bezel",
+      "description": "Main screen bezel artwork",
+      "dimensions": { "width": 1024, "height": 768 },
+      "filePatterns": ["*bezel*", "*screen*art*"],
+      "required": false,
+      "type": "bezel",
+      "hasAlpha": true
+    },
+    {
+      "id": "bezel-inner",
+      "meshName": "bezel-inner",
+      "displayName": "Inner Bezel",
+      "description": "Inner bezel surround",
+      "dimensions": { "width": 512, "height": 512 },
+      "filePatterns": ["*bezel*inner*"],
+      "required": false,
+      "type": "texture",
+      "defaultColor": { "r": 20, "g": 20, "b": 20, "intensity": 1.0 }
+    },
+    {
+      "id": "overlay",
+      "meshName": "overlay",
+      "displayName": "Screen Overlay",
+      "description": "Transparent screen overlay",
+      "dimensions": { "width": 1024, "height": 768 },
+      "filePatterns": ["*overlay*", "*glass*"],
+      "required": false,
+      "type": "bezel",
+      "hasAlpha": true
+    },
+    {
+      "id": "control-panel",
+      "meshName": "joystick",
+      "displayName": "Control Panel",
+      "description": "Main control panel surface",
+      "dimensions": { "width": 1024, "height": 512 },
+      "filePatterns": ["*control*", "*cp*", "*panel*"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "control-panel-front",
+      "meshName": "joystickdown",
+      "displayName": "Control Panel Front",
+      "description": "Front edge of control panel",
+      "dimensions": { "width": 1024, "height": 128 },
+      "filePatterns": ["*cp*front*"],
+      "required": false,
+      "type": "texture",
+      "defaultColor": { "r": 20, "g": 20, "b": 20, "intensity": 1.0 }
+    },
+    {
+      "id": "front-panel",
+      "meshName": "front",
+      "displayName": "Front Panel",
+      "description": "Lower front panel",
+      "dimensions": { "width": 1024, "height": 1024 },
+      "filePatterns": ["*front*", "*kick*", "*lower*"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "coin-slot",
+      "meshName": "coin-slot",
+      "displayName": "Coin Slot",
+      "description": "Coin insertion area",
+      "dimensions": { "width": 256, "height": 256 },
+      "filePatterns": ["*coin*", "*insert*"],
+      "required": false,
+      "type": "texture"
+    },
+    {
+      "id": "trim",
+      "meshName": "trim",
+      "displayName": "Cabinet Trim",
+      "description": "Main edge trim",
+      "dimensions": { "width": 256, "height": 256 },
+      "filePatterns": ["*trim*"],
+      "required": false,
+      "type": "texture",
+      "defaultColor": { "r": 25, "g": 25, "b": 25, "intensity": 1.0 }
+    },
+    {
+      "id": "trim-black",
+      "meshName": "trimblack",
+      "displayName": "Black Trim",
+      "description": "Black accent trim",
+      "dimensions": { "width": 256, "height": 256 },
+      "filePatterns": ["*trim*black*"],
+      "required": false,
+      "type": "texture",
+      "defaultColor": { "r": 15, "g": 15, "b": 15, "intensity": 1.0 }
+    }
+  ],
+  "flightstickParts": [
+    {
+      "id": "stick",
+      "meshName": "stick",
+      "displayName": "Flight Stick",
+      "description": "Main flight stick controller",
+      "defaultColor": { "r": 40, "g": 40, "b": 40, "intensity": 1.0 }
+    },
+    {
+      "id": "stick-decal",
+      "meshName": "stickdecal",
+      "displayName": "Stick Decal",
+      "description": "Flight stick label/decal",
+      "defaultColor": { "r": 200, "g": 200, "b": 200, "intensity": 1.0 }
+    },
+    {
+      "id": "dial",
+      "meshName": "dial",
+      "displayName": "Spinner Dial",
+      "description": "Rotary spinner control",
+      "defaultColor": { "r": 60, "g": 60, "b": 60, "intensity": 1.0 }
+    }
+  ],
+  "buttons": [
+    {
+      "id": "btn-trigger",
+      "meshName": "button-trigger",
+      "displayName": "Trigger",
+      "description": "Flight stick trigger button",
+      "defaultColor": { "r": 200, "g": 50, "b": 50, "intensity": 1.0 }
+    },
+    {
+      "id": "btn-red",
+      "meshName": "button-red",
+      "displayName": "Red Button",
+      "description": "Red action button",
+      "defaultColor": { "r": 220, "g": 40, "b": 40, "intensity": 1.0 }
+    },
+    {
+      "id": "btn-white",
+      "meshName": "button-white",
+      "displayName": "White Button",
+      "description": "White action button",
+      "defaultColor": { "r": 240, "g": 240, "b": 240, "intensity": 1.0 }
+    },
+    {
+      "id": "btn-chrome",
+      "meshName": "button-chrome",
+      "displayName": "Chrome Button",
+      "description": "Chrome button surround",
+      "defaultColor": { "r": 180, "g": 180, "b": 180, "intensity": 1.0 }
+    }
+  ],
+  "mirrorParts": [
+    {
+      "id": "mirror",
+      "meshName": "mirror",
+      "displayName": "Mirror",
+      "description": "Reflective mirror panel",
+      "defaultColor": { "r": 150, "g": 150, "b": 160, "intensity": 0.8 }
+    },
+    {
+      "id": "mirror1",
+      "meshName": "mirror1",
+      "displayName": "Mirror 1",
+      "description": "Side mirror panel",
+      "defaultColor": { "r": 150, "g": 150, "b": 160, "intensity": 0.8 }
+    },
+    {
+      "id": "mirror2",
+      "meshName": "mirror2",
+      "displayName": "Mirror 2",
+      "description": "Lower mirror panel",
+      "defaultColor": { "r": 150, "g": 150, "b": 160, "intensity": 0.8 }
+    },
+    {
+      "id": "mirror3",
+      "meshName": "mirror3",
+      "displayName": "Mirror 3",
+      "description": "Upper mirror panel",
+      "defaultColor": { "r": 150, "g": 150, "b": 160, "intensity": 0.8 }
+    }
+  ],
+  "coinDoorParts": [
+    {
+      "id": "cd-base",
+      "meshName": "CD-base",
+      "displayName": "Coin Door Base",
+      "defaultColor": { "r": 30, "g": 30, "b": 30, "intensity": 1.0 }
+    },
+    {
+      "id": "cd-slot",
+      "meshName": "CD-slot",
+      "displayName": "Coin Slot",
+      "defaultColor": { "r": 20, "g": 20, "b": 20, "intensity": 1.0 }
+    },
+    {
+      "id": "cd-25c",
+      "meshName": "CD-25c",
+      "displayName": "25¢ Label",
+      "defaultColor": { "r": 200, "g": 180, "b": 50, "intensity": 1.0 }
+    },
+    {
+      "id": "cd-return",
+      "meshName": "CD-return",
+      "displayName": "Coin Return",
+      "defaultColor": { "r": 40, "g": 40, "b": 40, "intensity": 1.0 }
+    },
+    {
+      "id": "cd-upper",
+      "meshName": "CD-upper",
+      "displayName": "Upper Coin Door",
+      "defaultColor": { "r": 35, "g": 35, "b": 35, "intensity": 1.0 }
+    },
+    {
+      "id": "cd-lower",
+      "meshName": "CD-lower",
+      "displayName": "Lower Coin Door",
+      "defaultColor": { "r": 35, "g": 35, "b": 35, "intensity": 1.0 }
+    }
+  ],
+  "miscParts": [
+    {
+      "id": "bulb",
+      "meshName": "bulb",
+      "displayName": "Light Bulb",
+      "description": "Illumination bulb",
+      "defaultColor": { "r": 255, "g": 240, "b": 200, "intensity": 1.0 },
+      "emissive": true
+    },
+    {
+      "id": "screen-base",
+      "meshName": "screen-base",
+      "displayName": "Screen Base",
+      "defaultColor": { "r": 20, "g": 20, "b": 20, "intensity": 1.0 }
+    }
+  ],
+  "screenMesh": "screen-mock-horizontal"
+}
